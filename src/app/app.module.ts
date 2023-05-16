@@ -14,6 +14,9 @@ import { CheckoutModule } from './checkout/checkout.module';
 import { PlaceOrderModule } from './place-order/place-order.module';
 import { LoginComponent } from './login-register/login/login.component';
 import { RegisterComponent } from './login-register/register/register.component';
+import { SharedUserAccountModule } from './user-account/shared-user-account/shared-user-account.module';
+import { UserAccountModule } from './user-account/user-account.module';
+import { ManageAccountModule } from './user-account/manage-account/manage-account.module';
 
 
 
@@ -38,7 +41,10 @@ import { RegisterComponent } from './login-register/register/register.component'
     ContactModule,
     ViewProductModule,
     CheckoutModule,
-    PlaceOrderModule
+    PlaceOrderModule,
+    SharedUserAccountModule,
+    UserAccountModule,
+    ManageAccountModule
     
   ],
   providers: [],

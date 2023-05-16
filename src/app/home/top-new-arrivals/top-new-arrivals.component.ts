@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-top-new-arrivals',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-new-arrivals.component.scss']
 })
 export class TopNewArrivalsComponent {
+  constructor(private alert:AlertService){
 
+  }
+getAlert(){
+  this.alert.alert();
+}
 }
