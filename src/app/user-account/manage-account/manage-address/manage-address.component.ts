@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./manage-address.component.scss']
 })
 export class ManageAddressComponent {
+  isModalOpen = false;
+  openModal() {
+    this.isModalOpen = true;
+  }
 
+  closeModal() {
+    this.isModalOpen = false;
+  }
 }

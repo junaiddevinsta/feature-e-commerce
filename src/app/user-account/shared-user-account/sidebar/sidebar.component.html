@@ -19,7 +19,7 @@
     <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
         <!-- single link -->
         <div class="space-y-1 pl-8">
-            <a href="account.html" 
+            <a href="account.html"
                 class="relative text-base font-medium capitalize hover:text-primary transition block ">
                 Manage account
                 <span class="absolute -left-8 top-0 text-base">
@@ -28,21 +28,21 @@
             </a>
             <a routerLink="/user-account/manage-account/profile-info" [ngClass]="btnValue === 'profile-info' ? 'text-primary' : ''"  (click)="showComponent('profileInfo')" class="hover:text-primary transition capitalize block" (click)="selectBtn('pictures')">Profile information</a>
             <a routerLink="/user-account/manage-account/manage-address" [ngClass]="btnValue === 'manageAddress' ? 'text-primary' : ''" (click)="showComponent('manageAddress')" class="hover:text-primary transition capitalize block" (click)="selectBtn('manageAddress')">Manage address</a>
-            <a href="change-password.html" class="hover:text-primary transition capitalize block">change password</a>
+            <a routerLink="/user-account/manage-account/change-password" [ngClass]="btnValue === 'changePassword' ? 'text-primary' : ''" (click)="showComponent('changePassword')" class="hover:text-primary transition capitalize block" (click)="selectBtn('changePassword')">change password</a>
         </div>
         <!-- single link end -->
         <!-- single link -->
         <div class="space-y-1 pl-8 pt-4">
-            <a href="#"
+            <a routerLink="#"
                 class="relative medium capitalize text-gray-800 font-medium hover:text-primary transition block">
                 My order history
                 <span class="absolute -left-8 top-0 text-base">
                     <i class="fas fa-gift"></i>
                 </span>
             </a>
-            <a href="#" class="hover:text-primary transition block capitalize">my returns</a>
-            <a href="#" class="hover:text-primary transition block capitalize">my cancellations</a>
-            <a href="#" class="hover:text-primary transition block capitalize">my reviews</a>
+            <a routerLink="/user-account/order-history/user-returns" class="hover:text-primary transition block capitalize">my returns</a>
+            <a routerLink="/user-account/order-history/user-cancellations" class="hover:text-primary transition block capitalize">my cancellations</a>
+            <a routerLink="/user-account/order-history/user-reviews" class="hover:text-primary transition block capitalize">my reviews</a>
         </div>
         <!-- single link end -->
         <!-- single link -->

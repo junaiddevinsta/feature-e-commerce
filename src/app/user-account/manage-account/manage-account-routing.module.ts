@@ -4,6 +4,7 @@ import { RenderUserAccountComponent } from '../render-user-account.component';
 
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { ManageAddressComponent } from './manage-address/manage-address.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 const routes: Routes = [
   {
@@ -17,11 +18,15 @@ const routes: Routes = [
       {
         path:'manage-address',
         component:ManageAddressComponent
+      },
+      {
+        path:'change-password',
+        component:ChangePasswordComponent
       }
-      
+
     ],
-   
-    
+
+
   }
 ];
 

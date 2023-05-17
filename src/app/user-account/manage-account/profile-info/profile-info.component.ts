@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-info.component.scss']
 })
 export class ProfileInfoComponent {
+  isModalOpen = false;
+  openModal() {
+    this.isModalOpen = true;
+  }
 
+  closeModal() {
+    this.isModalOpen = false;
+  }
 }
