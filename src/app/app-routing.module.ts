@@ -31,10 +31,7 @@ const routes: Routes = [
     path:'view',
     loadChildren:()=>import('./view-product/view-product.module').then((m)=>m.ViewProductModule)
   },
-{
-  path:'wishlist',
-  loadChildren:()=>import('./wishlist/wishlist.module').then((m)=>m.WishlistModule)
-},
+
 {
   path:'cart',
   loadChildren:()=>import('./cart/cart.module').then((m)=>m.CartModule)
@@ -55,9 +52,9 @@ const routes: Routes = [
       path:'',
       component:LoginComponent
     },
-   
+
   ]
-  
+
 },
 {
   path:'user-account',

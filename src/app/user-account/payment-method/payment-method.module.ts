@@ -12,6 +12,9 @@ import { VoucherComponent } from './voucher/voucher.component';
   imports: [
     CommonModule,
     PaymentMethodRoutingModule
+  ],
+  exports:[
+    VoucherComponent
   ]
 })
 export class PaymentMethodModule { }
