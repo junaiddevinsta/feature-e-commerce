@@ -5,20 +5,22 @@ import { UserAccountRoutingModule } from './user-account-routing.module';
 import { RenderUserAccountComponent } from './render-user-account.component';
 import { ManageAccountModule } from './manage-account/manage-account.module';
 import { SharedUserAccountModule } from './shared-user-account/shared-user-account.module';
+import { OrderHistoryModule } from './order-history/order-history.module';
 
 
 
 @NgModule({
   declarations: [
-    
-  
+
+
     RenderUserAccountComponent
   ],
   imports: [
     CommonModule,
     UserAccountRoutingModule,
     ManageAccountModule,
-    SharedUserAccountModule
+    SharedUserAccountModule,
+    OrderHistoryModule
   ]
 })
 export class UserAccountModule { }

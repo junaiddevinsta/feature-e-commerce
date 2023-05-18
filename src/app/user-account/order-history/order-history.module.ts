@@ -16,6 +16,13 @@ import { UserReviewsComponent } from './user-reviews/user-reviews.component';
   imports: [
     CommonModule,
     OrderHistoryRoutingModule
+  ],
+  exports:[
+
+      UserReturnsComponent,
+      UserCancellationsComponent,
+      UserReviewsComponent
+
   ]
 })
 export class OrderHistoryModule { }

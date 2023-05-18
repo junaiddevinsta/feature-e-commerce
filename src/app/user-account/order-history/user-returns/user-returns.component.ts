@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-returns.component.scss']
 })
 export class UserReturnsComponent {
+  isModalOpen = false;
+  openModal() {
+    this.isModalOpen = true;
+  }
 
+  closeModal() {
+    this.isModalOpen = false;
+  }
 }

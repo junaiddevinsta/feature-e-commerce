@@ -40,9 +40,9 @@
                     <i class="fas fa-gift"></i>
                 </span>
             </a>
-            <a routerLink="/user-account/order-history/user-returns" class="hover:text-primary transition block capitalize">my returns</a>
-            <a routerLink="/user-account/order-history/user-cancellations" class="hover:text-primary transition block capitalize">my cancellations</a>
-            <a routerLink="/user-account/order-history/user-reviews" class="hover:text-primary transition block capitalize">my reviews</a>
+            <a routerLink="/user-account/order-history/user-returns" [ngClass]="btnValue === 'userReturns' ? 'text-primary' : ''" (click)="showComponent('userReturns')" class="hover:text-primary transition block capitalize" (click)="selectBtn('userReturns')">my returns</a>
+            <a routerLink="/user-account/order-history/user-cancellations" [ngClass]="btnValue === 'userCancellations' ? 'text-primary' : ''" (click)="showComponent('userCancellations')" class="hover:text-primary transition block capitalize" (click)="selectBtn('userCancellations')">my cancellations</a>
+            <a routerLink="/user-account/order-history/user-reviews" [ngClass]="btnValue === 'userReviews' ? 'text-primary' : ''" (click)="showComponent('userReviews')" class="hover:text-primary transition block capitalize" (click)="selectBtn('userReviews')" class="hover:text-primary transition block capitalize">my reviews</a>
         </div>
         <!-- single link end -->
         <!-- single link -->
