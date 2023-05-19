@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-
+display=true;
+toggle(){
+  this.display=!this.display
+  console.log("toggle")
+}
 }
